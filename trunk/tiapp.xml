@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+<id>tord.royles.org</id>
+<name>Tord</name>
+<version>1.0</version>
+<publisher>broyles</publisher>
+<url>www.royles.co.uk</url>
+<description>No description provided</description>
+<copyright>2010 by broyles</copyright>
+<icon>default_app_logo.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <analytics>true</analytics>
+<guid>e533d3e8-7031-4bb7-ae84-7793149cd72d</guid>
+</ti:app>
