@@ -34,7 +34,7 @@ public class tord extends TabActivity {
 	    Intent intent;  // Reusable Intent for each tab
 
 	    // Create an Intent to launch an Activity for the tab (to be reused)
-	    intent = new Intent().setClass(this, TruthsActivity.class);
+	    intent = new Intent().setClass(this, PlayersActivity.class);
 
 	    // Initialize a TabSpec for each tab and add it to the TabHost
 	    spec = tabHost.newTabSpec("players").setIndicator("Players",
@@ -49,12 +49,12 @@ public class tord extends TabActivity {
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
 
-	    intent = new Intent().setClass(this, PlayersActivity.class);
+	    intent = new Intent().setClass(this, TruthsActivity.class);
 	    spec = tabHost.newTabSpec("truths").setIndicator("Truths",
 	                      res.getDrawable(R.drawable.ic_tab_truths))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
 
-	    tabHost.setCurrentTab(1);
+	    tabHost.setCurrentTab(0);
 	}
 }
