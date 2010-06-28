@@ -26,8 +26,6 @@ import android.widget.TextView;
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
 
-	        TextView textview = new TextView(this);
-	        textview.setText("This is the Dares tab");
-	        setContentView(textview);
+	        setContentView(R.layout.darestab);
 	    }
 	}
