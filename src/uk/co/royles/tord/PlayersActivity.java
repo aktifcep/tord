@@ -19,7 +19,9 @@ package uk.co.royles.tord;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.AdapterView.OnItemSelectedListener;
 
 
 public class PlayersActivity extends Activity {
@@ -27,6 +29,47 @@ public class PlayersActivity extends Activity {
 	        super.onCreate(savedInstanceState);
  
 	        setContentView(R.layout.playerstab);
-	}
+		    Spinner spinner = (Spinner) findViewById(R.id.player1sex);
+		    ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+		            this, R.array.sex_array, android.R.layout.simple_spinner_item);
+		    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		    spinner.setAdapter(adapter);
+		    spinner.setOnItemSelectedListener(new SexSelectedListener());
+
+		    Spinner s2 = (Spinner) findViewById(R.id.player2sex);
+	        adapter = ArrayAdapter.createFromResource(this, R.array.sex_array,
+	                android.R.layout.simple_spinner_item);
+	        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+	        s2.setAdapter(adapter);
+	        s2.setOnItemSelectedListener(new SexSelectedListener());
+	        
+		    Spinner s3 = (Spinner) findViewById(R.id.player3sex);
+	        adapter = ArrayAdapter.createFromResource(this, R.array.sex_array,
+	                android.R.layout.simple_spinner_item);
+	        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+	        s3.setAdapter(adapter);
+	        s3.setOnItemSelectedListener(new SexSelectedListener());
+	        
+		    Spinner s4 = (Spinner) findViewById(R.id.player4sex);
+	        adapter = ArrayAdapter.createFromResource(this, R.array.sex_array,
+	                android.R.layout.simple_spinner_item);
+	        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+	        s4.setAdapter(adapter);
+	        s4.setOnItemSelectedListener(new SexSelectedListener());
+	        
+		    Spinner s5 = (Spinner) findViewById(R.id.player5sex);
+	        adapter = ArrayAdapter.createFromResource(this, R.array.sex_array,
+	                android.R.layout.simple_spinner_item);
+	        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+	        s5.setAdapter(adapter);
+	        s5.setOnItemSelectedListener(new SexSelectedListener());
+	        
+		    Spinner s6 = (Spinner) findViewById(R.id.player6sex);
+	        adapter = ArrayAdapter.createFromResource(this, R.array.sex_array,
+	                android.R.layout.simple_spinner_item);
+	        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+	        s6.setAdapter(adapter);
+	        s6.setOnItemSelectedListener(new SexSelectedListener());
+	    }
 	
 }
