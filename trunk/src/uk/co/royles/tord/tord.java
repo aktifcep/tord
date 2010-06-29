@@ -40,6 +40,7 @@ public class tord extends TabActivity {
 	    spec = tabHost.newTabSpec("players").setIndicator("Players",
 	                      res.getDrawable(R.drawable.ic_tab_players))
 	                  .setContent(intent);
+
 	    tabHost.addTab(spec);
 
 	    // Do the same for the other tabs
